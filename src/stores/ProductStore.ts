@@ -63,7 +63,6 @@ export const useProductStore = defineStore("ProductStore", {
 					product
 				);
 				console.log("Successfully updated document: ", res);
-				console.log(this.products);
 				this.products = this.products.map((prod) => {
 					if (prod.id === productId.id) {
 						return { id: productId.id, data: product };

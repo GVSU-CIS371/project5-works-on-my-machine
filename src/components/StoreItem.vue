@@ -58,7 +58,7 @@
 			</v-card-actions>
 		</v-container>
 	</v-card>
-	<v-card v-if="useEditStore().isEdit">
+	<v-card v-if="useEditStore().isEdit" class="wiggle">
 		<v-col cols="auto">
 			<v-btn :prepend-icon="`mdi-trash-can`" size="small" color="error">
 				Delete
