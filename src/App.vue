@@ -209,7 +209,6 @@
 			></v-switch>
 		</v-app-bar>
 		<v-main class="bg-blue-lighten-5">
-			<v-container v-if="useEditStore().isEdit"></v-container>
 			<router-view v-slot="{ Component }">
 				<transition name="shrink-explode">
 					<component :is="Component" />
