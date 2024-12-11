@@ -1,5 +1,5 @@
 <template>
-	<v-container>
+	<v-container fluid class="px-10">
 		<v-row>
 			<v-col
 				v-for="product in (products as ProductDoc[])"
@@ -7,8 +7,7 @@
 				cols="12"
 				md="4"
 				lg="3"
-				sm="6"
-			>
+				sm="6">
 				<StoreItem :product="product" />
 			</v-col>
 		</v-row>
